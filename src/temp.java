@@ -12,6 +12,6 @@ public class temp {
             System.out.println((num1 * num2));
         else
             System.out.println((double)num1 / num2);
-
+        in.close();
     }
 }
