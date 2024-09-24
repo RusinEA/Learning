@@ -21,11 +21,9 @@ public class HW3_4 {
                 System.out.println("Число слишком большое");
             else
                 System.out.println(Math.pow(num1, num2));
-
         }
 
         in.close();
-
 
     }
 }
