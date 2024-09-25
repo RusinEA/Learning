@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class temp {
+public class HW6_1 {
     public static void main(String[] args) {
 //        Создаем сканер для чтения с клавиатуры
         Scanner scanner = new Scanner(System.in);
@@ -15,7 +15,7 @@ public class temp {
 //        Зачем - разберемся, когда будем изучать I/O Streams
         scanner.close();
 
-        System.out.println(bot(s));
+        prnt(bot(s));
     }
 
     public static String bot(String s) {
@@ -35,4 +35,10 @@ public class temp {
                 return "Unknown message";
         }
     }
+
+    public static void prnt(String s){
+        System.out.println(s);
+    }
+
+
 }
