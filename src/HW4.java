@@ -20,5 +20,6 @@ public class HW4 {
             inpnum = inpnum % 10;
         }
 
+        in.close();
     }
 }
