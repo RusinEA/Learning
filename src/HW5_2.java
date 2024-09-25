@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class HW_5_2 {
+
+public class HW5_2 {
     public static void main (String [] args){
 
 
@@ -19,7 +20,7 @@ public class HW_5_2 {
             fnum[i] = in.nextInt();
         }
 
-        int sum = 0;
+        int sum;
         for (int i = 0; i < 5; i++ ) {
             if (i==0)
                 sum = fnum[i] + fnum[fnum.length - 1];

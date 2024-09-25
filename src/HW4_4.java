@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class HW_4_4 {
+
+public class HW4_4 {
     public static void main(String[] args) {
         //программа для рисования прямоугольника
         Scanner in = new Scanner(System.in);
