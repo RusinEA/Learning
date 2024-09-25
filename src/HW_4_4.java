@@ -10,7 +10,6 @@ public class HW_4_4 {
         int higt = in.nextInt();
 
         for (int j = 1; j <= higt; j++) {
-
             for (int i = 1; i <= lngt; i++) {
 
                 //рисуем углы
