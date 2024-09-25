@@ -1,7 +1,7 @@
 public class HW5_1_ARRAYS {
     public static void main (String [] args){
 
-        //------------HW 5.1.1
+        //------------HW 5.1.1 Вывести в строку имя не используя String
         char[] name = {'E', 'g', 'o', 'r'};
 
 
@@ -9,7 +9,7 @@ public class HW5_1_ARRAYS {
             System.out.print(name[i]);
 
         System.out.println();
-        //------------HW 5.1.2
+        //------------HW 5.1.2 Вывести в строку имя из массива используя String
         String sname = "";
         for (int i = 0; i < name.length; i++ )
             sname = sname + name[i];
