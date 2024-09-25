@@ -20,7 +20,6 @@ public class HW6_1 {
 
     public static String bot(String s) {
         //        Используем конструкцию switch-case для переменной s
-
         switch (s) {
             case "Hi":
                 return "Hello";

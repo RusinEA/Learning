@@ -12,11 +12,15 @@ public class HW4_4 {
 
         in.close();
 
+        rectangle(lngt, higt);
+    }
+    public static void rectangle(int lngt, int higt){
+
         for (int j = 1; j <= higt; j++) {
             for (int i = 1; i <= lngt; i++) {
 
                 //рисуем углы
-                if ((j == 1 & i == 1) | (j == higt & i == lngt) | (j == 1 & i == lngt) | (j == higt & i == 1))
+                if ((j == 1 & i == 1) || (j == higt & i == lngt) || (j == 1 & i == lngt) || (j == higt & i == 1))
                     System.out.print('#');
 
                 //рисуем потолок и пол если значение высоты соответствует началу или концу прямоугольника
