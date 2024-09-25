@@ -9,6 +9,8 @@ public class HW_4_4 {
         System.out.println("Input height of rectangle");
         int higt = in.nextInt();
 
+        in.close();
+
         for (int j = 1; j <= higt; j++) {
             for (int i = 1; i <= lngt; i++) {
 
