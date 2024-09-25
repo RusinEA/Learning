@@ -22,7 +22,7 @@ public class HW6_1 {
         //        Используем конструкцию switch-case для переменной s
 
         switch (s) {
-            case "Hi":  // Если s равно "Hi"
+            case "Hi":
                 return "Hello";
 
             case "Bye":
