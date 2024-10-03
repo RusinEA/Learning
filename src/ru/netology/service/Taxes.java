@@ -15,4 +15,35 @@ public class Taxes {
             return 0;
         }
     }
+
+    public static void taxCompare (int earnings, int spendings){
+        if (taxEarnings(earnings) > taxEarningsMinusSpendings(earnings, spendings)){
+            System.out.println("___________________________________________________________");
+            System.out.println("Вам подходит форма налогообложения УСН доходы минус расходы");
+            System.out.println("___________________________________________________________");
+            System.out.println("Ваш налог составит: " + taxEarningsMinusSpendings(earnings, spendings));
+            System.out.println("Налог на другой системе: " + (taxEarnings(earnings)));
+            System.out.println("Экономия составит: " + (taxEarnings(earnings) - taxEarningsMinusSpendings(earnings, spendings)));
+        }
+        else {
+            System.out.println("_____________________________________________");
+            System.out.println("Вам подходит форма налогообложения УСН доходы");
+            System.out.println("_____________________________________________");
+            System.out.println("Ваш налог составит: " + taxEarnings(earnings));
+            System.out.println("Налог на другой системе: " + (taxEarningsMinusSpendings(earnings, spendings)));
+            System.out.println("Экономия составит: " + (taxEarningsMinusSpendings(earnings, spendings) - taxEarnings(earnings)));
+        }
+
+    }
+
+    public static void prntMessages(){
+        System.out.println();
+        System.out.println("Выберите операцию и введите её номер:");
+        System.out.println("1. Добавить новый доход");
+        System.out.println("2. Добавить новый расход");
+        System.out.println("3. Подобрать систему налогообложения на основе введённых данных");
+        System.out.println("Или введите слово end для завершения программы");
+    }
+
+
 }
