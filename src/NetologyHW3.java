@@ -15,7 +15,6 @@ public class NetologyHW3 {
             if (LeapYear.calculateLeapYear(year, count)){
                 System.out.println("Верно");
                 rightAnswer++;
-                continue;
             }
             else {
                 System.out.println("Не верно!");
