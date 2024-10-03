@@ -5,3 +5,4 @@ public class CustomService {
         return (0.01 * price) + weight * 100;
     }
 }
+
