@@ -3,7 +3,12 @@ package ru.netology.service;
 public class Taxes {
 
     public static int taxEarnings (int earnings){
+        if (earnings !=0){
             return (earnings * 6) / 100;
+        }
+        else {
+            return 0;
+        }
     }
 
     public static int taxEarningsMinusSpendings (int earnings, int spendings){

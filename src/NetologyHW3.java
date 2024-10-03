@@ -12,7 +12,7 @@ public class NetologyHW3 {
             System.out.println("Введите количество дней");
             int count = scanner.nextInt();
 
-            if (LeapYear.calculateLeapYear(year, count)){
+            if (LeapYear.countDays(year) == count){
                 System.out.println("Верно");
                 rightAnswer++;
             }
