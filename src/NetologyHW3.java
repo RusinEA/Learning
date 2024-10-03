@@ -18,6 +18,7 @@ public class NetologyHW3 {
             }
             else {
                 System.out.println("Не верно!");
+                System.out.println("В этом году " + LeapYear.countDays(year) + " дней");
                 System.out.println("Количество верных ответов: " +rightAnswer);
                 break;
             }
