@@ -1,5 +1,6 @@
-import java.util.Scanner;
 import ru.netology.service.Taxes;
+
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,11 +13,7 @@ public class Main {
         //Цикл будет работать, пока пользователь не введет `end`
         while (true) {
             // Выводим информацию о возможных операциях пользователю
-            System.out.println("Выберите операцию и введите её номер:");
-            System.out.println("1. Добавить новый доход");
-            System.out.println("2. Добавить новый расход");
-            System.out.println("3. Подобрать систему налогообложения на основе введённых данных");
-
+            Taxes.prntMessages();
             String input = scanner.nextLine();
 
             if ("end".equals(input)) {
@@ -41,26 +38,9 @@ public class Main {
                     if (earnings <= 0) {
                         System.out.println("Доходы не были введены");
                         break;
-                    }
-                    else {
-                        if (Taxes.taxEarnings(earnings) > Taxes.taxEarningsMinusSpendings(earnings, spendings)){
-                            System.out.println("___________________________________________________________");
-                            System.out.println("Вам подходит форма налогообложения УСН доходы минус расходы");
-                            System.out.println("___________________________________________________________");
-                            System.out.println("Ваш налог составит: " + Taxes.taxEarningsMinusSpendings(earnings, spendings));
-                            System.out.println("Налог на другой системе: " + (Taxes.taxEarnings(earnings)));
-                            System.out.println("Экономия составит: " + (Taxes.taxEarnings(earnings) - Taxes.taxEarningsMinusSpendings(earnings, spendings)));
-                            break;
-                        }
-                        else {
-                            System.out.println("_____________________________________________");
-                            System.out.println("Вам подходит форма налогообложения УСН доходы");
-                            System.out.println("_____________________________________________");
-                            System.out.println("Ваш налог составит: " + Taxes.taxEarnings(earnings));
-                            System.out.println("Налог на другой системе: " + (Taxes.taxEarningsMinusSpendings(earnings, spendings)));
-                            System.out.println("Экономия составит: " + (Taxes.taxEarningsMinusSpendings(earnings, spendings) - Taxes.taxEarnings(earnings)));
-                            break;
-                        }
+                    } else {
+                        Taxes.taxCompare(earnings, spendings);
+                        break;
                     }
                 default:
                     System.out.println("Такой операции нет");
