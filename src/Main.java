@@ -4,14 +4,14 @@ import ru.netology.service.Basket;
 public class Main {
     public static void main(String[] args) {
 
-        String[] products = {"Хлеб", "Яблоки", "Молоко", "Гречневая крупа"};
-        int[] prices = {14, 30, 50, 80};
+        String[] productsArr = {"Хлеб", "Яблоки", "Молоко", "Гречневая крупа"};
+        int[] pricesArr = {14, 30, 50, 80};
         Scanner scanner = new Scanner(System.in);
         int[] countProductsArr = new int [4];
         System.out.println("В нашей лавке сегодня такие продукты: ");
 
-        for (int i = 0; i < products.length; i++) {
-            System.out.println("Наименование: " + products[i] + " | Стоимость: " + prices[i] + "р/шт");
+        for (int i = 0; i < productsArr.length; i++) {
+            System.out.println("Наименование: " + productsArr[i] + " | Стоимость: " + pricesArr[i] + "р/шт");
         }
 
         while (true){
@@ -33,11 +33,10 @@ public class Main {
 
         }
 
-        for ( : ){
-            Basket.basketOut();
+        System.out.println("Ваша корзина: ");
+        for (int i = 0; i < productsArr.length; i++  ){
+            Basket.basketOut(productsArr[i], countProductsArr[i], pricesArr[i]);
         }
-
-
 
     }
 }
