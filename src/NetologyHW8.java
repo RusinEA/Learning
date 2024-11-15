@@ -1,6 +1,7 @@
 import ru.netology.service.MatrixOut;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class NetologyHW8 {
 
@@ -10,6 +11,7 @@ public class NetologyHW8 {
 
         int[][] colors = new int[SIZE][SIZE];
         Random random = new Random();
+        Scanner scanner = new Scanner(System.in);
 
         for (int i = 0; i < SIZE; i++) {
             for (int j = 0; j < SIZE; j++) {
@@ -20,7 +22,21 @@ public class NetologyHW8 {
 
         MatrixOut.mxOut(colors, SIZE);
 
-        MatrixOut.mxRotate(colors, SIZE);
+        System.out.println("Введите на сколько градусов повернуть матрицу: 1 - 90; 2 - 180; 3 - 270");
+        int operation = scanner.nextInt();
+        switch (operation) {
+            case 1:
+                MatrixOut.mxRotate90(colors, SIZE);
+                break;
+            case 2:
+                MatrixOut.mxRotate180(colors, SIZE);
+                break;
+            case 3:
+                MatrixOut.mxRotate270(colors, SIZE);
+                break;
+            default:
+                System.out.println("Такого выбора нет");
+        }
 
     }
 
