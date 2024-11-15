@@ -1,6 +1,6 @@
 import ru.netology.service.Book;
 
-public class NetololyHW6 {
+public class NetologyHW6 {
     public static void main(String[] args) {
         Book newBook = new Book("Solaris", 1961, "Lem", 210);
         System.out.println("Большая ли книга");

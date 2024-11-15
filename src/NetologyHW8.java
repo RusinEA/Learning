@@ -1,7 +1,8 @@
-import java.util.Random;
 import ru.netology.service.MatrixOut;
 
-public class Main {
+import java.util.Random;
+
+public class NetologyHW8 {
 
     public static final int SIZE = 8;
 
