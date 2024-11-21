@@ -2,7 +2,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 import ru.netology.service.MatrixOut;
-import ru.netology.service.Taxes;
 
 public class Main {
 

@@ -12,12 +12,12 @@ public class NetologyHW7 {
         System.out.println("В нашей лавке сегодня такие продукты: ");
 
         for (int i = 0; i < productsArr.length; i++) {
-            System.out.println("Наименование: " + productsArr[i] + " | Стоимость: " + pricesArr[i] + "р/шт");
+            System.out.println("Наименование: " + (i+1) + " - " + productsArr[i] + " | Стоимость: " + pricesArr[i] + "р/шт");
         }
 
         while (true){
 
-            System.out.println("Выберите индекс продукта и его количество, или введите end для выхода из программы");
+            System.out.println("Выберите индекс продукта (от 1 до 4) и его количество, или введите end для выхода из программы");
 
             String input = scanner.nextLine();
 
@@ -38,6 +38,16 @@ public class NetologyHW7 {
         for (int i = 0; i < productsArr.length; i++  ){
             Basket.basketOut(productsArr[i], countProductsArr[i], pricesArr[i]);
         }
+
+        int summ = 0;
+
+        for (int i = 0; i < productsArr.length; i++  ){
+            summ += Basket.basketSummOut(countProductsArr[i], pricesArr[i]);
+        }
+
+        System.out.println();
+
+        System.out.println("Всего в вашей корзине товаров на сумму - " + summ + " руб");
 
     }
 }
