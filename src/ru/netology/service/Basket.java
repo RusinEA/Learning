@@ -9,7 +9,7 @@ public class Basket {
         }
     }
 
-    public static int basketSummOut(int count, int price){
+    public static int basketSummOut(int count, int price) {
         return count * price;
     }
 
