@@ -1,4 +1,4 @@
-import ru.netology.service.Taxes;
+import ru.netology.service.taxes.PrintTaxes;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public class NetologyHW4 {
         //Цикл будет работать, пока пользователь не введет `end`
         while (true) {
             // Выводим информацию о возможных операциях пользователю
-            Taxes.prntMessages();
+            PrintTaxes.prntMessages();
             String input = scanner.nextLine();
 
             if ("end".equals(input)) {
@@ -40,7 +40,7 @@ public class NetologyHW4 {
                         break;
                     }
                     else {
-                        Taxes.taxCompare(earnings, spendings);
+                        PrintTaxes.taxCompare(earnings, spendings);
                         break;
                     }
                 default:
