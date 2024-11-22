@@ -1,7 +1,7 @@
 package ru.netology.service.taxes;
 
-import static ru.netology.service.taxes.TaxSystem.taxEarnings;
-import static ru.netology.service.taxes.TaxSystem.taxEarningsMinusSpendings;
+import static ru.netology.service.taxes.TaxList.taxEarnings;
+import static ru.netology.service.taxes.TaxList.taxEarningsMinusSpendings;
 
 public class PrintTaxes {
     public static void taxCompare(int earnings, int spendings) {
