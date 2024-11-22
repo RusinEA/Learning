@@ -8,7 +8,6 @@ public class TaxEarningMinusSpend extends TaxSystem {
         if (tax >= 0) {
             return tax;
         } else {
-            // если расходы оказались больше, то налог посчитается отрицательным
             return 0;
         }
     }

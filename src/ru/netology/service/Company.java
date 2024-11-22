@@ -35,10 +35,12 @@ public class Company{
 
     public void payTaxes(){
         if (getTaxSystem().equals("TaxEarnings")){
-            System.out.println(taxCalcEarn.calcTaxFor(debit, credit));
+            System.out.println("Компания " + title + " уплатила налог в размере:" + taxCalcEarn.calcTaxFor(debit, credit) + "руб.");
         } else if (getTaxSystem().equals("TaxEarningsMinusSpend")) {
-            System.out.println(taxCalcEarnMinusSpend.calcTaxFor(debit, credit));
+            System.out.println("Компания " + title + " уплатила налог в размере:" + taxCalcEarnMinusSpend.calcTaxFor(debit, credit) + "руб.");
         }
+        this.debit = 0;
+        this.credit = 0;
     }
 
 
