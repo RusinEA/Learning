@@ -1,6 +1,6 @@
 package ru.netology.service.taxes;
 
-public class TaxEarningMinusSpend extends TaxSystem{
+public class TaxEarningMinusSpend extends TaxSystem {
 
     @Override
     public int calcTaxFor(int debit, int credit) {
