@@ -10,9 +10,6 @@ public class Company {
     int credit = 0;
     TaxSystem taxSystem;
 
-    TaxEarnings taxCalcEarn = new TaxEarnings();
-    TaxEarningMinusSpend taxCalcEarnMinusSpend = new TaxEarningMinusSpend();
-
     public Company(String title, TaxSystem taxSystem) {
         this.title = title;
         this.taxSystem = taxSystem;
@@ -31,7 +28,7 @@ public class Company {
     }
 
     public void payTaxes() {
-        System.out.println("Компания " + title + " уплатила налог в размере:" + taxCalcEarn.calcTaxFor(debit, credit) + "руб.");
+        System.out.println("Компания " + title + " уплатила налог в размере:" + taxSystem.calcTaxFor(debit, credit) + "руб.");
         this.debit = 0;
         this.credit = 0;
     }

@@ -13,7 +13,7 @@ public class Main {
         company.payTaxes();
 
         company.setTaxSystem(new TaxEarnings());
-        company.shiftMoney(5000);
+        company.shiftMoney(1000);
         company.shiftMoney(-100);
         company.payTaxes();
     }
