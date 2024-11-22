@@ -30,10 +30,6 @@ public class Company {
         this.taxSystem = taxSystem;
     }
 
-    public TaxSystem getTaxSystem() {
-        return taxSystem;
-    }
-
     public void payTaxes() {
         System.out.println("Компания " + title + " уплатила налог в размере:" + taxCalcEarn.calcTaxFor(debit, credit) + "руб.");
         this.debit = 0;
