@@ -5,10 +5,10 @@ import ru.netology.service.taxes.TaxEarnings;
 import ru.netology.service.taxes.TaxSystem;
 
 public class Company {
-    String title;
-    int debit = 0;
-    int credit = 0;
-    TaxSystem taxSystem;
+    private String title;
+    private int debit = 0;
+    private int credit = 0;
+    private TaxSystem taxSystem;
 
     public Company(String title, TaxSystem taxSystem) {
         this.title = title;

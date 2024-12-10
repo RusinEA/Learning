@@ -1,11 +1,8 @@
-import ru.netology.service.Account;
 import ru.netology.service.Company;
-import ru.netology.service.taxes.TaxEarnings;
 import ru.netology.service.taxes.TaxEarningMinusSpend;
+import ru.netology.service.taxes.TaxEarnings;
 
-import java.util.Scanner;
-
-public class Main {
+public class NetologyHW9 {
 
     public static void main(String[] args) {
         Company company = new Company("Рога и копыта", new TaxEarningMinusSpend());
@@ -17,7 +14,6 @@ public class Main {
         company.shiftMoney(1000);
         company.shiftMoney(-100);
         company.payTaxes();
-
-
     }
 }
+
