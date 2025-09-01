@@ -22,7 +22,7 @@ public class HW3 {
             System.out.println("Значения равны!");
         else
             System.out.println((double) num1 / num2);
-        in.close();
+        //in.close();
 
 
         //----------------------3.2
@@ -47,7 +47,7 @@ public class HW3 {
         else
             System.out.println("Unknown message");
 
-        str1.close();
+        //str1.close();
 
         //switch
         Scanner str2 = new Scanner(System.in);
@@ -66,7 +66,7 @@ public class HW3 {
             default:
                 System.out.println("Unknown message");
         }
-        str2.close();
+        //str2.close();
 
         //---------------------------3.3
         /*

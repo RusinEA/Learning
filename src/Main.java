@@ -1,23 +1,40 @@
-import ru.netology.service.Account;
-import ru.netology.service.Company;
-import ru.netology.service.taxes.TaxEarnings;
-import ru.netology.service.taxes.TaxEarningMinusSpend;
-
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        Company company = new Company("Рога и копыта", new TaxEarningMinusSpend());
-        company.shiftMoney(1000);
-        company.shiftMoney(-100);
-        company.payTaxes();
+        Scanner scanner = new Scanner(System.in);
 
-        company.setTaxSystem(new TaxEarnings());
-        company.shiftMoney(1000);
-        company.shiftMoney(-100);
-        company.payTaxes();
+        System.out.print("Enter number: ");
+        int number = scanner.nextInt();
 
+        scanner.close();
 
+        if (number <= 0) {
+            System.out.println("The number must be at least 1");
+            return;
+        }
+
+        System.out.println(calculateExpression(number));
     }
+
+    //    Делаем удобный для использования метод с одним параметром
+    static double calculateExpression(int number) {
+        return calculateExpression(1, number);
+    }
+
+    //    Реализуем рекурсивный метод, второй параметр которого необходим,
+//    но всегда известен для первого вызова
+    static double calculateExpression(int number, int maxNumber) {
+        if (number == maxNumber) {
+            return Math.sqrt(number);
+        }
+
+        return Math.sqrt(number + calculateExpression(number + 1, maxNumber));
+    }
+
+
+
+
 }
+
