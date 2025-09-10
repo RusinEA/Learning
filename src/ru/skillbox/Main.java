@@ -7,6 +7,8 @@ public class Main {
         System.out.println(4 + 6);
         System.out.println(4 + 4);
 
+        System.out.println("Comment for my first commit");
+
     }
 }
 
