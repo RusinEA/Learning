@@ -9,6 +9,9 @@ public class Main {
 
         System.out.println("Comment for my first commit");
 
+        System.out.println("Checkout");
+        System.out.println("Checkout 2");
+
     }
 }
 
