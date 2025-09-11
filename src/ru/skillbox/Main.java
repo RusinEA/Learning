@@ -4,13 +4,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println(4 + 6);
-        System.out.println(4 + 4);
+        Car car1 = new Car();
+        Car car2 = new Car();
+        Car car3 = new Car();
 
-        System.out.println("Comment for my first commit");
+        car1.move(100);
+        car2.move(400);
+        car3.move(200);
 
-        System.out.println("Checkout");
-        System.out.println("Checkout 2");
+        System.out.println(Car.allDistance);
 
     }
 }

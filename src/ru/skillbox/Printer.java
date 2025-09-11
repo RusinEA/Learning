@@ -13,16 +13,8 @@ public class Printer {
         System.out.println(s);
 // Создайте 3 переменных типа Frog и проинициализируйте их новыми объектами типа Frog. Заполните пропуски в коде:
 
-
-//        Frog frog1 = new Frog();
-//        Frog frog2 = new Frog();
-//        Frog frog3 = new Frog();
-
         Frog[] frogs = new Frog[] {new Frog(), new Frog(), new Frog()};
 
-//        frogs[0] = frog1;
-//        frogs[1] = frog2;
-//        frogs[2] = frog3;
         System.out.println(frogs.length);
 // Переместите каждую из созданных лягушек на случайную позицию влево и вверх и выведите ее положение на экран, вызвав метод print. Заполните пропуски в коде и повторите этот блок кода столько раз, сколько это необходимо:
         int i = 0;
