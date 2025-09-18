@@ -1,6 +1,6 @@
 package ru.skillbox;
 
-public class MoneyChange {
+public class MainMoneyChange {
     public static void main(String[] args) {
         int change = 2335;
 

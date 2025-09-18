@@ -1,6 +1,6 @@
 package ru.skillbox;
 
-public class Printer {
+public class MainFrog {
 
     public static void main(String[] args) {
         int xStep = 2;
@@ -26,6 +26,12 @@ public class Printer {
         }
 
 
+        String original = "Каждый охотник желает знать, где сидит фазан";
+        String modified = original.toUpperCase()
+                .substring(11, 22)
+                .strip();
+        System.out.println(modified);
+
     }
     public static class Frog {
         int xPosition;
@@ -45,6 +51,7 @@ public class Printer {
                     + "xPosition= " + xPosition
                     + "; yPosition= " + yPosition);
         }
+
     }
 }
 
