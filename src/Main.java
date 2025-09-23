@@ -1,18 +1,18 @@
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Hello, world!");
-        System.out.println("This is Java!");
-
-        System.out.println("^");
-        System.out.println("***");
-        System.out.println("*****");
-        System.out.println("*******");
-
+        String dash = "------------------------------------------------------";
+        String header = String.format("%-12s %-10s %-10s %-20s", "Дата", "Сумма", "Тип", "Описание");
+        System.out.println(header);
+        System.out.println(dash);
+        System.out.println("%-12s %-10s %-10s %-20s");
+        //Скин на цифрового аватара; 3900; EXPENSE; 26.03.2036
     }
 
 }
