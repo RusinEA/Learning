@@ -1,4 +1,4 @@
-package ru.skillbox.IncomeAndExpenses.UserInterface;
+package ru.skillbox.incomeAndExpenses.UserInterface;
 
 public enum Commands {
     HELP,

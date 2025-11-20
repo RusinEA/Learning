@@ -1,8 +1,8 @@
-package ru.skillbox.IncomeAndExpenses.UserInterface;
+package ru.skillbox.incomeAndExpenses.UserInterface;
 
-import ru.skillbox.IncomeAndExpenses.FinancialOperationsAndRecords.FinancialAccounting;
-import ru.skillbox.IncomeAndExpenses.FinancialOperationsAndRecords.OperationType;
-import ru.skillbox.IncomeAndExpenses.FinancialOperationsAndRecords.Transaction;
+import ru.skillbox.incomeAndExpenses.FinancialOperationsAndRecords.FinancialAccounting;
+import ru.skillbox.incomeAndExpenses.FinancialOperationsAndRecords.OperationType;
+import ru.skillbox.incomeAndExpenses.FinancialOperationsAndRecords.Transaction;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

@@ -1,6 +1,6 @@
-package ru.skillbox.IncomeAndExpenses;
+package ru.skillbox.incomeAndExpenses;
 
-import ru.skillbox.IncomeAndExpenses.UserInterface.UserMenu;
+import ru.skillbox.incomeAndExpenses.UserInterface.UserMenu;
 
 public class Main {
     public static void main(String[] args) {

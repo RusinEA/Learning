@@ -1,4 +1,4 @@
-package ru.skillbox.IncomeAndExpenses.FinancialOperationsAndRecords;
+package ru.skillbox.incomeAndExpenses.FinancialOperationsAndRecords;
 
 import java.math.BigDecimal;
 
