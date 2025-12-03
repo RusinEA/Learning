@@ -11,6 +11,10 @@ public abstract class Vehicle {
         this.x = x;
     }
 
+    public int getX() {
+        return x;
+    }
+
     public void move(){
         this.x += this.speed;
     }
