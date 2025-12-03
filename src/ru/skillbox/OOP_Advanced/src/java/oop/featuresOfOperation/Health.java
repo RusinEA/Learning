@@ -1,5 +1,7 @@
 package ru.skillbox.OOP_Advanced.src.java.oop.featuresOfOperation;
 
-public interface Breakable {
+interface Health {
     boolean isBroken();
+    void Destroy();
+    void FullRecover();
 }

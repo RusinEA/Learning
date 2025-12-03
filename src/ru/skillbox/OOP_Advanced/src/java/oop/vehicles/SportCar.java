@@ -1,43 +1,37 @@
 package ru.skillbox.OOP_Advanced.src.java.oop.vehicles;
 
-import ru.skillbox.OOP_Advanced.src.java.oop.featuresOfOperation.Breakable;
-import ru.skillbox.OOP_Advanced.src.java.oop.featuresOfOperation.Refuelled;
+import ru.skillbox.OOP_Advanced.src.java.oop.featuresOfOperation.FuelManager;
 
-public class SportCar extends Vehicle implements Refuelled, Breakable {
+public class SportCar extends Vehicle {
 
-    private int fuel;
-    private int maxFuel;
-    public SportCar(String model, int speed, int x, int maxFuel) {
+//    private int fuel;
+//    private int maxFuel;
+    private int fuelPerKm;
+    FuelManager tank;
+
+    public SportCar(String model, int speed, int x, int maxFuel, int fuelPerKm) {
         super(model, speed, x);
-        this.maxFuel = maxFuel;
-        this.fuel = maxFuel;
+        tank = new FuelManager(maxFuel);
+        this.fuelPerKm = fuelPerKm;
+//        this.maxFuel = maxFuel;
+//        this.fuel = maxFuel;
     }
 
     @Override
     public void move() {
-        this.fuel -= 1;
-        if (this.fuel < 1) {
-            refuel();
-            return;
+        tank.useFuel(fuelPerKm);
+        if (tank.isFuelEmpty()) {
+            tank.refuel();
         }
         super.move();
     }
 
-    public int getFuel() {
-        return fuel;
+    public double getFuel() {
+        return tank.fuelNow();
     }
 
-    public void setFuel(int fuel) {
-        this.fuel = fuel;
-    }
+//    public void setFuel(int fuel) {
+//        this.fuel = fuel;
+//    }
 
-    @Override
-    public void refuel() {
-        this.fuel = maxFuel;
-    }
-
-    @Override
-    public boolean isBroken() {
-        return Math.random() <= 0.75;
-    }
 }
