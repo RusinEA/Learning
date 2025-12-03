@@ -12,7 +12,7 @@ public abstract class Vehicle {
     }
 
     public int getX() {
-        return x;1
+        return x;
     }
 
     public void move(){

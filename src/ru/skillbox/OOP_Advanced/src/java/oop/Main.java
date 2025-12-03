@@ -11,7 +11,7 @@ public class Main {
             fordGT40.move();
             System.out.println(fordGT40.getFuel());
             System.out.println(fordGT40.getX());
-        }1
+        }
 
     }
 }
