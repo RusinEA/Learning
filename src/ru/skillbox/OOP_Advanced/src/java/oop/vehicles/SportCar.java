@@ -20,7 +20,7 @@ public class SportCar extends Vehicle implements Refuelled, Breakable {
             refuel();
             return;
         }
-        super.move();
+        super.move();1
     }
 
     public int getFuel() {
