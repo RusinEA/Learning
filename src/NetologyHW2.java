@@ -2,9 +2,6 @@ import java.util.Scanner;
 import ru.netology.service.CustomService;
 
 public class NetologyHW2 {
-    public static double calculateCustoms(int price, int weight){
-        return (0.01 * price) + weight * 100;
-    }
     public static void main (String[] args){
 
         Scanner scanner = new Scanner(System.in);
