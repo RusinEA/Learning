@@ -13,7 +13,7 @@ public abstract class Vehicle {
 
     public int getX() {
         return x;
-    }
+    }1
 
     public void move(){
         this.x += this.speed;

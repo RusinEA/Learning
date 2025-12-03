@@ -25,7 +25,7 @@ public class SportCar extends Vehicle {
         }
         super.move();
     }
-
+1
     public double getFuel() {
         return tank.fuelNow();
     }
