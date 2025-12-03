@@ -8,4 +8,4 @@ public interface Refuelled {
     void useFuel(double fuelcount);
     boolean isFuelEmpty();
     void emptyFuel();
-}1
+}

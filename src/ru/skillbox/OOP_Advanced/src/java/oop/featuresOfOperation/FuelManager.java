@@ -65,7 +65,7 @@ public class FuelManager implements Refuelled {
     public void emptyFuel() {
         fuelnow = 0.0;
     }
-1
+
     private void valid() {
         if (maxfuelcapacity <= 0.0) {
             System.out.println("отрицательное или нулевое значение емкости бака");

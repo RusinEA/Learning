@@ -11,7 +11,7 @@ class DamageManager implements Health {
     public boolean isBroken() {
         return isBroked;
     }
-1
+
     @Override
     public void Destroy() {
         isBroked = true;

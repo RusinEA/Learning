@@ -4,4 +4,4 @@ interface Health {
     boolean isBroken();
     void Destroy();
     void FullRecover();
-}1
+}
