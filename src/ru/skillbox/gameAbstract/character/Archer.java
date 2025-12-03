@@ -1,4 +1,4 @@
-package ru.skillbox.game.character;
+package ru.skillbox.gameAbstract.character;
 
 public class Archer extends Character implements Attacker {
     public Archer(String name, int health) {

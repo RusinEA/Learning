@@ -1,7 +1,7 @@
-package ru.skillbox.game;
+package ru.skillbox.gameAbstract;
 
-import ru.skillbox.game.character.*;
-import ru.skillbox.game.character.Character;
+import ru.skillbox.gameAbstract.character.*;
+import ru.skillbox.gameAbstract.character.Character;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ru.skillbox.game.character;
+package ru.skillbox.gameAbstract.character;
 
 public class Rogue extends Character implements Attacker{
 

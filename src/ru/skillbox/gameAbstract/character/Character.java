@@ -1,10 +1,11 @@
-package ru.skillbox.game.character;
+package ru.skillbox.gameAbstract.character;
 
 public abstract class Character {
     private final String name;
     private int health;
     private int x;
     private int y;
+
     public Character(String name, int health) {
         this.name = name;
         this.health = health;

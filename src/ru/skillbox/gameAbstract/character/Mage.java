@@ -1,4 +1,4 @@
-package ru.skillbox.game.character;
+package ru.skillbox.gameAbstract.character;
 
 public class Mage extends Character implements CombatHealer{
     public Mage(String name, int health) {

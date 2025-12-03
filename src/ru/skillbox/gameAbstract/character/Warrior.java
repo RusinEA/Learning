@@ -1,4 +1,4 @@
-package ru.skillbox.game.character;
+package ru.skillbox.gameAbstract.character;
 
 public class Warrior extends Character implements Attacker{
 
