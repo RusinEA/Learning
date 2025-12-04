@@ -4,7 +4,7 @@ import ru.skillbox.OOP_Advanced.src.java.oop.vehicles.SportCar;
 
 public class Main {
     public static void main(String[] args) {
-        SportCar fordGT40 = new SportCar("Ford GT40", 2, 0, 30, 2, 5);
+        SportCar fordGT40 = new SportCar("Ford GT40", 2, 0, 30, 2, 5, 0.75);
 
         int tstf = fordGT40.getFuel();
         for (int i = 1; i <= 40; i++) {

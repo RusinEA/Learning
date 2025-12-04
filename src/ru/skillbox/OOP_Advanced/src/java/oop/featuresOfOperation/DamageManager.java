@@ -1,6 +1,6 @@
 package ru.skillbox.OOP_Advanced.src.java.oop.featuresOfOperation;
 
-class DamageManager implements Health {
+class DamageManager implements Breakable {
     boolean isBroked = false;
 
     public DamageManager(boolean isBroked) {
@@ -10,16 +10,6 @@ class DamageManager implements Health {
     @Override
     public boolean isBroken() {
         return isBroked;
-    }
-
-    @Override
-    public void Destroy() {
-        isBroked = true;
-    }
-
-    @Override
-    public void FullRecover() {
-        isBroked = false;
     }
 
 }

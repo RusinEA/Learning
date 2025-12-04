@@ -10,12 +10,20 @@ public class SportCar extends Vehicle implements Refuelled, Breakable, Accelerat
     private int maxFuel;
     private int fuelPerKm;
     private int nitroCapacity;
-    public SportCar(String model, int speed, int x, int maxFuel, int fuelPerKm, int nitroCapacity) {
+    private double breakLimit;
+    public SportCar(String model,
+                    int speed,
+                    int x,
+                    int maxFuel,
+                    int fuelPerKm,
+                    int nitroCapacity,
+                    double breakLimit) {
         super(model, speed, x);
         this.maxFuel = maxFuel;
         this.fuel = maxFuel;
         this.fuelPerKm = fuelPerKm;
         this.nitroCapacity = nitroCapacity;
+        this.breakLimit = breakLimit;
     }
 
     @Override
@@ -44,12 +52,12 @@ public class SportCar extends Vehicle implements Refuelled, Breakable, Accelerat
 
     @Override
     public void refuel() {
-        this.fuel = maxFuel;
+        setFuel(maxFuel);
     }
 
     @Override
     public boolean isBroken() {
-        return Math.random() > 0.75;
+        return Math.random() > this.breakLimit;
     }
 
 
