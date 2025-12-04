@@ -1,4 +1,4 @@
-package ru.skillbox.ClassesAndMethods_2.PersonTask.src;
+package ru.skillbox.ClassesAndMethods_2.PersonTask;
 
 import java.util.Objects;
 

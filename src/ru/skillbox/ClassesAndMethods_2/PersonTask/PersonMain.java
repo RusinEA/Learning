@@ -1,4 +1,4 @@
-import ru.skillbox.ClassesAndMethods_2.PersonTask.src.Person;
+package ru.skillbox.ClassesAndMethods_2.PersonTask;
 
 public class PersonMain {
     public static void main(String[] args) {

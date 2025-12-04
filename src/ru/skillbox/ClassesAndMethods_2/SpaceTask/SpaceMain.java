@@ -1,3 +1,5 @@
+package ru.skillbox.ClassesAndMethods_2.SpaceTask;
+
 public class SpaceMain {
     public static void main(String[] args) {
         System.out.println("Площадь планеты Земля - " + MathUtils.calculateSurfaceArea(6371));
