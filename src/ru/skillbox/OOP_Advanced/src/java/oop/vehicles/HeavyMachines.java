@@ -4,26 +4,22 @@ import ru.skillbox.OOP_Advanced.src.java.oop.featuresOfOperation.Acceleration;
 import ru.skillbox.OOP_Advanced.src.java.oop.featuresOfOperation.Breakable;
 import ru.skillbox.OOP_Advanced.src.java.oop.featuresOfOperation.Refuelled;
 
-public class SportCar extends Vehicle implements Refuelled, Breakable, Acceleration {
-
+public class HeavyMachines extends Vehicle implements Refuelled, Breakable {
     private int fuel;
     private int maxFuel;
     private int fuelPerKm;
-    private int nitroCapacity;
     private double breakLimit;
 
-    public SportCar(String model,
-                    int speed,
-                    int x,
-                    int maxFuel,
-                    int fuelPerKm,
-                    int nitroCapacity,
-                    double breakLimit) {
+    public HeavyMachines(String model,
+                         int speed,
+                         int x,
+                         int maxFuel,
+                         int fuelPerKm,
+                         double breakLimit) {
         super(model, speed, x);
         this.maxFuel = maxFuel;
         this.fuel = maxFuel;
         this.fuelPerKm = fuelPerKm;
-        this.nitroCapacity = nitroCapacity;
         this.breakLimit = breakLimit;
     }
 
@@ -36,9 +32,6 @@ public class SportCar extends Vehicle implements Refuelled, Breakable, Accelerat
         }
         if (isBroken()) {
             return;
-        }
-        if (nitroCapacity > 0) {
-            accelerate();
         }
         super.move();
     }
@@ -57,10 +50,4 @@ public class SportCar extends Vehicle implements Refuelled, Breakable, Accelerat
         return Math.random() > this.breakLimit;
     }
 
-
-    @Override
-    public void accelerate() {
-        this.nitroCapacity -= 1;
-        super.move();
-    }
 }

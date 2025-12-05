@@ -15,7 +15,12 @@ public abstract class Vehicle {
         return x;
     }
 
-    public void move(){
+    public void move() {
         this.x += this.speed;
+    }
+
+    @Override
+    public String toString() {
+        return model;
     }
 }
